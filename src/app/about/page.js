@@ -3,9 +3,10 @@ async function takeTime(){
         setTimeout(resolve,3000);
     });
 }
-
+export const metadata={
+    title:"About : Work Manager",
+};
 export default async function About(){
-    throw new Error("this is manual error");
     await takeTime();
     return (
         <div><h1>This is About Route</h1></div>
